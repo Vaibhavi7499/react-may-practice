@@ -1,0 +1,20 @@
+.main-tag{
+    display: flex;
+    gap: 1rem;
+    background-color:#333;
+    // margin: 0 auto;
+    height: 50px;
+    align-items: center;
+}
+
+.main-tag li{
+    list-style:  none;
+}
+
+.main-tag a{
+color: white;
+text-decoration: none;
+}
+.active{
+    border-bottom: 2px solid white;
+}
