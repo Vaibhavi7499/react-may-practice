@@ -17,6 +17,9 @@ const RoutingEx = () => {
          <li>
             <NavLink to="compb">comp b</NavLink>
         </li>
+         <li>
+            <NavLink to="counter">Custom Hook</NavLink>
+        </li>
     </ul>
   )
 }
