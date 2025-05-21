@@ -8,6 +8,7 @@ import { Routes,Route } from "react-router-dom";
 import HookLayout from "./component/Hooks/HookLayout";
 import HookUseState from "./component/Hooks/HookUseState";
 import HookUseEffect from "./component/Hooks/HookUseEffect";
+import HookUsereducer from "./component/Hooks/HookUsereducer";
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route index element={<HookUseState />} />
         <Route path="useref" element={<UseRefEx />} />
         <Route path="useeffect" element={<HookUseEffect />} />
+        <Route path="usereducer" element={<HookUsereducer/>} />
       </Route>
       </Routes>
     </>
