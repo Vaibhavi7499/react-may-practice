@@ -8,9 +8,7 @@ const RoutingEx = () => {
       <li>
         <NavLink to="userform">User Form</NavLink>
       </li>
-      <li>
-        <NavLink to="useref">useRef</NavLink>
-      </li>
+      
       <li>
         <NavLink to="compc">comp c</NavLink>
       </li>
@@ -21,7 +19,7 @@ const RoutingEx = () => {
         <NavLink to="counter">Custom Hook</NavLink>
       </li>
       <li>
-        <NavLink to="pages">Nested Route</NavLink>
+        <NavLink to="hooks">Hooks</NavLink>
       </li>
     </ul>
   );
