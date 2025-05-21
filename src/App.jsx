@@ -7,6 +7,7 @@ import CounterEx from "./component/custonHookEx/CounterEx";
 import { Routes,Route } from "react-router-dom";
 import HookLayout from "./component/Hooks/HookLayout";
 import HookUseState from "./component/Hooks/HookUseState";
+import HookUseEffect from "./component/Hooks/HookUseEffect";
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/hooks" element={<HookLayout />} >
         <Route index element={<HookUseState />} />
         <Route path="useref" element={<UseRefEx />} />
+        <Route path="useeffect" element={<HookUseEffect />} />
       </Route>
       </Routes>
     </>

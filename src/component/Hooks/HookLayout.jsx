@@ -11,6 +11,9 @@ const HookLayout = () => {
       <li>
         <NavLink to="/hooks/useref">useRef</NavLink>
       </li>
+      <li>
+        <NavLink to="/hooks/useeffect">useEffect</NavLink>
+      </li>
     </ul>
     <Outlet />
     </>
