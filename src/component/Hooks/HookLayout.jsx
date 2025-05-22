@@ -26,6 +26,9 @@ const HookLayout = () => {
       <li>
         <NavLink to="/hooks/callback">useCallback</NavLink>
       </li>
+       <li>
+        <NavLink to="/hooks/usetransition">useTransition</NavLink>
+      </li>
     </ul>
     <Outlet />
     </>

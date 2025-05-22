@@ -1,28 +1,29 @@
-import React, { useCallback, useState } from "react";
-import Child from "./Child";
+import React, { useCallback, useState } from 'react'
+import Child from './Child'
 
 const Parent = () => {
-  let [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(0)
+    const [name, setName] = useState("Hello Kishor")
 
-  let incCounter = () => {
-    setCounter((prev) => prev + 1);
-  };
 
-  //   function callbackEx(id) {
-  //     console.log(id);
-  //   }
+    // let getIdFromChild = (id) => {
+    //     console.log(`id is ${id}`)
+    // }
 
-  const callbackEx = useCallback((id) => {
-    console.log(id);
-  }, []);
+   let getIdFromChild = useCallback((id) => {
+        console.log(`id is ${id}`) 
+    },[name])
 
   return (
     <div>
-      <h2>{counter}</h2>
-      <button onClick={incCounter}>Increment</button>
-      <Child callbackEx={callbackEx} />
+        <div>
+            <h1>{counter}</h1>
+            <button onClick={() => setCounter(counter + 1)}>Inc Count</button>
+            <button onClick={() => setName("Hello Sir")}>Change Name</button>
+        </div>
+        <Child name={name} getIdFromChild={getIdFromChild} />
     </div>
-  );
-};
+  )
+}
 
-export default Parent;
+export default Parent

@@ -12,6 +12,7 @@ import HookUsereducer from "./component/Hooks/HookUsereducer";
 import ContextApi from "./component/Hooks/ContextApi";
 import HookUseMemo from "./component/Hooks/HookUseMemo";
 import Parent from "./component/Hooks/UseCallback/Parent";
+import HookUseTransition from "./component/Hooks/HookUseTransition";
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="context" element={<ContextApi/>} />
         <Route path="usememo" element={<HookUseMemo/>} />
         <Route path="callback" element={<Parent/>} />
+        <Route path="usetransition" element={<HookUseTransition/>} />
       </Route>
       </Routes>
     </>
