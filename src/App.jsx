@@ -13,6 +13,7 @@ import ContextApi from "./component/Hooks/ContextApi";
 import HookUseMemo from "./component/Hooks/HookUseMemo";
 import Parent from "./component/Hooks/UseCallback/Parent";
 import HookUseTransition from "./component/Hooks/HookUseTransition";
+import HookUseLocation from "./component/Hooks/HookUseLocation";
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="usememo" element={<HookUseMemo/>} />
         <Route path="callback" element={<Parent/>} />
         <Route path="usetransition" element={<HookUseTransition/>} />
+        <Route path="uselocation" element={<HookUseLocation/>} />
       </Route>
       </Routes>
     </>

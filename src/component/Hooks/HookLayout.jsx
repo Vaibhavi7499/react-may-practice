@@ -29,6 +29,9 @@ const HookLayout = () => {
        <li>
         <NavLink to="/hooks/usetransition">useTransition</NavLink>
       </li>
+      <li>
+        <NavLink to="/hooks/uselocation" state={{fname:"COCSIT"}}>useLocation</NavLink>
+      </li>
     </ul>
     <Outlet />
     </>
