@@ -17,6 +17,15 @@ const HookLayout = () => {
       <li>
         <NavLink to="/hooks/usereducer">useReducer</NavLink>
       </li>
+      <li>
+        <NavLink to="/hooks/context">contextAPI</NavLink>
+      </li>
+      <li>
+        <NavLink to="/hooks/usememo">useMemo</NavLink>
+      </li>
+      <li>
+        <NavLink to="/hooks/callback">useCallback</NavLink>
+      </li>
     </ul>
     <Outlet />
     </>

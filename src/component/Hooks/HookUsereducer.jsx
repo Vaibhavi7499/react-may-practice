@@ -18,7 +18,7 @@ const HookUsereducer = () => {
   }
 
   return (
-    <div>
+    <div style={{margin:"20px 400px" }}>
       <h2>{state}</h2>
       <button
         className="btn btn-outline-success"
