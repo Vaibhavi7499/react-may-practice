@@ -9,6 +9,9 @@ import HookLayout from "./component/Hooks/HookLayout";
 import HookUseState from "./component/Hooks/HookUseState";
 import HookUseEffect from "./component/Hooks/HookUseEffect";
 import HookUsereducer from "./component/Hooks/HookUsereducer";
+import ContextApi from "./component/Hooks/ContextApi";
+import HookUseMemo from "./component/Hooks/HookUseMemo";
+import Parent from "./component/Hooks/UseCallback/Parent";
 
 
 const App = () => {
@@ -26,6 +29,9 @@ const App = () => {
         <Route path="useref" element={<UseRefEx />} />
         <Route path="useeffect" element={<HookUseEffect />} />
         <Route path="usereducer" element={<HookUsereducer/>} />
+        <Route path="context" element={<ContextApi/>} />
+        <Route path="usememo" element={<HookUseMemo/>} />
+        <Route path="callback" element={<Parent/>} />
       </Route>
       </Routes>
     </>
