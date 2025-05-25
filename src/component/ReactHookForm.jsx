@@ -5,7 +5,7 @@ const ReactHookForm = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({ mode: "onTouched" });
 
   const onSubmit = (data) => {
     console.log("Form submitted data", data);
@@ -25,15 +25,23 @@ const ReactHookForm = () => {
         />
         <p style={{ color: "red" }}>{errors?.username?.message}</p>
         <input
+          {...register("password", {
+            required: { value: true, message: "Password is required" },
+          })}
           style={{ marginBottom: "20px" }}
           className="form-control"
           type="text"
           placeholder="Enter password"
         />
+        <p style={{ color: "red" }}>{errors?.password?.message}</p>
+
         <input
           {...register("email", {
             required: { value: true, message: "Email is required" },
-            pattern: { value: "/^S+@S+$/i", message: "Invalid email" },
+            pattern: {
+              value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+              message: "Invalid email",
+            },
           })}
           className="form-control"
           type="text"
