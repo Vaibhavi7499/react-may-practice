@@ -16,6 +16,12 @@ const RoutingEx = () => {
       <li>
         <NavLink to="hooks">Hooks</NavLink>
       </li>
+      <li>
+        <NavLink to="lazyloading">Lazy Loading</NavLink>
+      </li>
+       <li>
+        <NavLink to="hookform">react-hook-form</NavLink>
+      </li>
     </ul>
   );
 };

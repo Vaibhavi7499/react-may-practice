@@ -7,7 +7,7 @@ const HookUseLocation = () => {
 
   return (
     <div>
-      <h3>{location?.pathname}</h3>
+      <h3 style={{color:"pink"}}>{location?.pathname}</h3>
       <h3>{location?.hash}</h3>
       <h3>{location?.key}</h3>
       <h3>{location?.search}</h3>
