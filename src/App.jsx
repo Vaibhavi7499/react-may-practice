@@ -14,15 +14,16 @@ import HookUseMemo from "./component/Hooks/HookUseMemo";
 import Parent from "./component/Hooks/UseCallback/Parent";
 import HookUseTransition from "./component/Hooks/HookUseTransition";
 import HookUseLocation from "./component/Hooks/HookUseLocation";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import ReactHookForm from "./component/ReactHookForm";
-const LazyLoading =lazy(() => import("./component/LazyLoading"));
+import Modal from "./component/PortalEx/Modal";
+const LazyLoading = lazy(() => import("./component/LazyLoading"));
 
 const App = () => {
-  console.log("test");
+  const [showmodel, setshowmodel] = useState(false);
   return (
     <>
-      <RoutingEx />
+      {/* <RoutingEx />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="userform" element={<UserForm />} />
@@ -41,7 +42,16 @@ const App = () => {
             <Route path="uselocation" element={<HookUseLocation />} />
           </Route>
         </Routes>
-      </Suspense>
+      </Suspense> */}
+       <h1>Hello from App</h1>
+      <button onClick={() => setshowmodel(true)}>Open Modal</button>
+      {showmodel && (
+        <Modal>
+          <p>This is portal model</p>
+      <button onClick={() => setshowmodel(false)}>close Modal</button>
+
+        </Modal>
+      )}
     </>
   );
 };
